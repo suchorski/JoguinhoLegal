@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resource"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MotorGraficoSimples"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RedeNeuralSimplesGrafical"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RedeNeuralSimples"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
