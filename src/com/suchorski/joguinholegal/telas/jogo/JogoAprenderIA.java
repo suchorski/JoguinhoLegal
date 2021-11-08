@@ -80,7 +80,6 @@ public class JogoAprenderIA extends Jogo {
 
 	protected void verificarMorte() {
 		if (!RedeNeuralUtils.populacaoMorta(ia.getCerebros())) {
-			// TODO: modificado de parallelStream para stream
 			ia.getCerebros().stream().filter(c -> c.isVivo()).forEach(c -> {
 				if (verificarMorte(c)) {
 					c.setVivo(false);

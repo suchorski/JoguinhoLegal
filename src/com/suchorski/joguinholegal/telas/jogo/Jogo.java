@@ -61,7 +61,6 @@ public class Jogo extends Tela {
 			while (blocos.size() > 0 && (blocos.getFirst().x + blocos.getFirst().width) < 0) {
 				blocos.pop();
 			}
-			// TODO: modificado de parallelStream para for
 			for (Bloco b : blocos) {
 				--b.x;
 			}
@@ -80,7 +79,6 @@ public class Jogo extends Tela {
 
 	protected boolean verificarMorte(Entidade entidade) {
 		Rectangle areaDoJogo = new Rectangle(getMotorGrafico().getComprimento(), getMotorGrafico().getAltura());
-		// TODO: modificado de parallelStream para stream
 		return !areaDoJogo.contains(entidade) || blocos.stream().filter(b -> b.isColidindo(entidade)).findAny().isPresent();
 	}
 
